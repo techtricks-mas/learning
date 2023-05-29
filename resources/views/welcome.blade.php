@@ -433,23 +433,23 @@
               <span class="quote-sign"><i class="ti-quote-left"></i></span>
               <div class="test-caro owl-carousel" data-slider-id="1">
                 <div class="single-testimonial">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore eco dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                  <p>Thanks a million for the insightful training these past few days. I have been able to gain a lot from it and will be sharing this with my coworkers at my workplace.</p>
                   <div class="testimonial-user">
-                    <img src="{{ url('/') }}/assets/images/avatar-small.png" class="avatar-small circle" alt="">
+                    <img src="https://ui-avatars.com/api/?name=Sansa+Stark" class="avatar-small circle" alt="">
                     <strong>Sansa Stark</strong>
                   </div>
                 </div>
                 <div class="single-testimonial">
-                  <p>Ypsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore eco dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                  <p>I am very much grateful for the explanatory handouts that entail the details of this training which can be used for future references in challenging situations.</p>
                   <div class="testimonial-user">
-                    <img src="{{ url('/') }}/assets/images/avatar-small.png" class="avatar-small circle" alt="">
+                    <img src="https://ui-avatars.com/api/?name=Linda+heiday" class="avatar-small circle" alt="">
                     <strong>Linda heiday</strong>
                   </div>
                 </div>
                 <div class="single-testimonial">
-                  <p>Qonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore eco dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                  <p>The training was innovative and mind enlarging. Rather than teach us everything, we were made to reason out the ‘why’ behind things and solve problems on our own.</p>
                   <div class="testimonial-user">
-                    <img src="{{ url('/') }}/assets/images/avatar-small.png" class="avatar-small circle" alt="">
+                    <img src="https://ui-avatars.com/api/?name=Anna+Gunn" class="avatar-small circle" alt="">
                     <strong>Anna Gunn</strong>
                   </div>
                 </div>
