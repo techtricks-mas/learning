@@ -366,47 +366,47 @@
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="post-item">
-              <img src="{{ url('/') }}/assets/images/post/1.jpg" alt="">
+              <img src="{{ url('/') }}/assets/images/news.jpg" alt="">
               <div class="post-content">
                 <div class="meta-tags">
                   <a href="#" class="post-meta category">creative
                   </a> | <a href="#" class="post-meta date">07 July, 2019</a>
                 </div>
-                <h3 class="post-title"><a href="#">Own may face grass dot
-                    subdue brought</a></h3>
+                <h3 class="post-title"><a href="#">Ambani’s JioCinema secures NBCUniversal titles, escalates Netflix and Disney rivalry</a></h3>
                 <div class="meta-tags">
-                  <a href="#" class="post-meta category"><i class="ti-package"></i>Women Fashion</a><a href="#" class="post-meta commentCount"><i class="ti-comments"></i>2 Comments</a>
+                  <a href="#" class="post-meta category"><i class="ti-package"></i>Tech</a><a href="#" class="post-meta commentCount"><i class="ti-comments"></i>2 Comments</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="post-item">
-              <img src="{{ url('/') }}/assets/images/post/2.jpg" alt="">
+              <img src="{{ url('/') }}/assets/images/news1.jpg" alt="">
               <div class="post-content">
                 <div class="meta-tags">
-                  <a href="#" class="post-meta category">technology
+                  <a href="#" class="post-meta category">Sports
                   </a> | <a href="#" class="post-meta date">07 June, 2019</a>
                 </div>
-                <h3 class="post-title"><a href="#">Dolores quis commodi ratione fugit optio</a></h3>
+                <h3 class="post-title"><a href="#">Reliance’s JioCinema breaks world record with free cricket streaming</a></h3>
                 <div class="meta-tags">
-                  <a href="#" class="post-meta category"><i class="ti-package"></i>creative</a><a href="#" class="post-meta commentCount"><i class="ti-comments"></i>2 Comments</a>
+                  <a href="#" class="post-meta category"><i class="ti-package"></i>Cricket</a><a href="#" class="post-meta commentCount"><i class="ti-comments"></i>23 Comments</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="post-item">
-              <img src="{{ url('/') }}/assets/images/post/3.jpg" alt="">
+              <img src="{{ url('/') }}/assets/images/news2.jpg" alt="">
               <div class="post-content">
                 <div class="meta-tags">
-                  <a href="#" class="post-meta category">Marketing
+                  <a href="#" class="post-meta category">creative
                   </a> | <a href="#" class="post-meta date">13 Feb, 2019</a>
                 </div>
-                <h3 class="post-title"><a href="#">Repellat delectus maiores accusantium</a></h3>
+                <h3 class="post-title"><a href="#">Solana’s co-founder sees potential for its blockchain to be the ‘Apple of crypto’
+                </a></h3>
                 <div class="meta-tags">
-                  <a href="#" class="post-meta category"><i class="ti-package"></i>Women Fashion</a>
-                  <a href="#" class="post-meta commentCount"><i class="ti-comments"></i>2 Comments</a>
+                  <a href="#" class="post-meta category"><i class="ti-package"></i>Tech</a>
+                  <a href="#" class="post-meta commentCount"><i class="ti-comments"></i>50 Comments</a>
                 </div>
               </div>
             </div>
