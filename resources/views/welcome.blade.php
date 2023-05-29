@@ -213,7 +213,7 @@
                 </figure>
                 <div class="course-content">
                   <h3><a href="{{url('/login')}}">HTML5 for beginners</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dicta at aliquam...
+                  <p>Throughout this course, you'll learn about the underlying structure of the web - HTML. You'll learn how to use this tree... 
                   </p>
                   <div class="enroll">
                     <div class="ratings">
@@ -242,7 +242,7 @@
                 </figure>
                 <div class="course-content">
                   <h3><a href="{{url('/login')}}">Advance CSS3 animations</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dicta at aliquam...
+                  <p>CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced....
                   </p>
                   <div class="enroll">
                     <div class="ratings">
@@ -271,7 +271,7 @@
                 </figure>
                 <div class="course-content">
                   <h3><a href="{{url('/login')}}">Core Javascript basics</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dicta at aliquam...
+                  <p>In this course, you'll learn JavaScript fundamentals that will be helpful as you dive deeper into more advanced...
                   </p>
                   <div class="enroll">
                     <div class="ratings">
@@ -300,7 +300,7 @@
                   </figure>
                   <div class="course-content">
                     <h3><a href="{{url('/login')}}">App Devlopment</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dicta at aliquam...
+                    <p>This is the recommended course to start learning Android! Build a series of apps using JAVA...
                     </p>
                     <div class="enroll">
                       <div class="ratings">
