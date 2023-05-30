@@ -41,6 +41,9 @@
             <li class="current-menu-item">
               <a href="{{ url('/') }}">Home</a>
             </li>
+            <li><a href="{{ url('/courses') }}">Courses</a></li>
+            <li><a href="{{ url('/search') }}">Search</a></li>
+            <li><a href="{{ url('/about') }}">About</a></li>
             <li><a href="{{ url('/login') }}">Log in</a></li>
           </ul>
         </nav>
@@ -58,14 +61,14 @@
       <div class="container">
         <div class="col-md-11 slider-content m-auto text-center">
           <h2><span>Educate!</span> Smart is Great</h2>
-          <form class="search-form" action="#">
-            <select name="country">
+          <form class="search-form" action="{{ url('/login') }}">
+            <select name="category">
               <option>All Categories</option>
               <option value="usa">IT & Software</option>
               <option value="canada">Development</option>
               <option value="australia">Marketing & SEO</option>
             </select>
-            <input type="text" placeholder="Enter a Subject">
+            <input type="text" name="value" placeholder="Enter a Subject">
             <button type="submit"><i class="ti-search"></i></button>
           </form>
         </div>
@@ -116,49 +119,49 @@
         </div>
         <div class="row">
           <div class="col-md-3 col-sm-6">
-            <a href="#" class="icon-list-block">
+            <a href="{{ url('/category') }}?id=10" class="icon-list-block">
               <img src="{{ url('/') }}/assets/images/icons/categories/1.png" alt="">
               <span>IT & Software</span>
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <a href="#" class="icon-list-block">
+            <a href="{{ url('/category') }}?id=12" class="icon-list-block">
               <img src="{{ url('/') }}/assets/images/icons/categories/2.png" alt="">
               <span>Data science</span>
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <a href="#" class="icon-list-block">
+            <a href="{{ url('/category') }}?id=13" class="icon-list-block">
               <img src="{{ url('/') }}/assets/images/icons/categories/3.png" alt="">
               <span>Development</span>
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <a href="#" class="icon-list-block">
+            <a href="{{ url('/category') }}?id=15" class="icon-list-block">
               <img src="{{ url('/') }}/assets/images/icons/categories/4.png" alt="">
               <span>Graphics design</span>
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <a href="#" class="icon-list-block">
+            <a href="{{ url('/category') }}?id=19" class="icon-list-block">
               <img src="{{ url('/') }}/assets/images/icons/categories/5.png" alt="">
               <span>Marketing</span>
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <a href="#" class="icon-list-block">
+            <a href="{{ url('/category') }}?id=20" class="icon-list-block">
               <img src="{{ url('/') }}/assets/images/icons/categories/6.png" alt="">
               <span>Music</span>
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <a href="#" class="icon-list-block">
+            <a href="{{ url('/category') }}?id=24" class="icon-list-block">
               <img src="{{ url('/') }}/assets/images/icons/categories/7.png" alt="">
               <span>Photography</span>
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <a href="#" class="icon-list-block">
+            <a href="{{ url('/category') }}?id=26" class="icon-list-block">
               <img src="{{ url('/') }}/assets/images/icons/categories/8.png" alt="">
               <span>Self Development</span>
             </a>
@@ -209,26 +212,26 @@
               <div class="single-course">
                 <figure class="course-thumb">
                   <img src="{{ url('/') }}/assets/images/html.jpg" alt="">
-                  <strong class="ribbon">$29.00</strong>
+                  <strong class="ribbon">$290.00</strong>
                 </figure>
                 <div class="course-content">
-                  <h3><a href="{{url('/login')}}">HTML5 for beginners</a></h3>
-                  <p>Throughout this course, you'll learn about the underlying structure of the web - HTML. You'll learn how to use this tree... 
+                  <h3><a href="{{url('/course')}}?course=24">HTML5 for beginners</a></h3>
+                  <p>Throughout this course, you'll learn about the underlying structure of the web - HTML. You'll learn how to use this tree...
                   </p>
                   <div class="enroll">
                     <div class="ratings">
                       <span class="total-students"><i class="ti-user"></i> 220 Students</span>
-                      <a href="#"><i class="ti-star"></i>
-                      </a><a href="#"><i class="ti-star"></i>
-                      </a><a href="#"><i class="ti-star"></i>
-                      </a><a href="#"><i class="ti-star"></i>
-                      </a><a href="#"><i class="ti-star"></i>
+                      <a href="{{url('/course')}}?course=24"><i class="ti-star"></i>
+                      </a><a href="{{url('/course')}}?course=24"><i class="ti-star"></i>
+                      </a><a href="{{url('/course')}}?course=24"><i class="ti-star"></i>
+                      </a><a href="{{url('/course')}}?course=24"><i class="ti-star"></i>
+                      </a><a href="{{url('/course')}}?course=24"><i class="ti-star"></i>
                       </a>
                       <span class="enrolled">(330)</span>
                     </div>
                     <div class="course-meta text-right">
                       <!-- <strong class="course-price">$29.00</strong> -->
-                      <a href="{{ url("/login") }}" class="btn btn-filled">Enroll now</a>
+                      <a href="{{url('/course')}}?course=24" class="btn btn-filled">Enroll now</a>
                     </div>
                   </div>
                 </div>
@@ -238,26 +241,26 @@
               <div class="single-course">
                 <figure class="course-thumb">
                   <img src="{{ url('/') }}/assets/images/css.jpg" alt="">
-                  <strong class="ribbon">$23.00</strong>
+                  <strong class="ribbon">$230.00</strong>
                 </figure>
                 <div class="course-content">
-                  <h3><a href="{{url('/login')}}">Advance CSS3 animations</a></h3>
+                  <h3><a href="{{url('/course')}}?course=25">Advance CSS3 animations</a></h3>
                   <p>CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to advanced....
                   </p>
                   <div class="enroll">
                     <div class="ratings">
                       <span class="total-students"><i class="ti-user"></i> 220 Students</span>
-                      <a href="#"><i class="ti-star"></i>
-                      </a><a href="#"><i class="ti-star"></i>
-                      </a><a href="#"><i class="ti-star"></i>
-                      </a><a href="#"><i class="ti-star"></i>
-                      </a><a href="#"><i class="ti-star"></i>
+                      <a href="{{url('/course')}}?course=25"><i class="ti-star"></i>
+                      </a><a href="{{url('/course')}}?course=25"><i class="ti-star"></i>
+                      </a><a href="{{url('/course')}}?course=25"><i class="ti-star"></i>
+                      </a><a href="{{url('/course')}}?course=25"><i class="ti-star"></i>
+                      </a><a href="{{url('/course')}}?course=25"><i class="ti-star"></i>
                       </a>
                       <span class="enrolled">(330)</span>
                     </div>
                     <div class="course-meta text-right">
                       <!-- <strong class="course-price">$29.00</strong> -->
-                      <a href="{{ url("/login") }}" class="btn btn-filled">Enroll now</a>
+                      <a href="{{url('/course')}}?course=25" class="btn btn-filled">Enroll now</a>
                     </div>
                   </div>
                 </div>
@@ -267,26 +270,26 @@
               <div class="single-course">
                 <figure class="course-thumb">
                   <img src="{{ url('/') }}/assets/images/js.jpg" alt="">
-                  <strong class="ribbon">$39.00</strong>
+                  <strong class="ribbon">$390.00</strong>
                 </figure>
                 <div class="course-content">
-                  <h3><a href="{{url('/login')}}">Core Javascript basics</a></h3>
+                  <h3><a href="{{url('/course')}}?course=32">Core Javascript basics</a></h3>
                   <p>In this course, you'll learn JavaScript fundamentals that will be helpful as you dive deeper into more advanced...
                   </p>
                   <div class="enroll">
                     <div class="ratings">
                       <span class="total-students"><i class="ti-user"></i> 220 Students</span>
-                      <a href="#"><i class="ti-star"></i>
-                      </a><a href="#"><i class="ti-star"></i>
-                      </a><a href="#"><i class="ti-star"></i>
-                      </a><a href="#"><i class="ti-star"></i>
-                      </a><a href="#"><i class="ti-star"></i>
+                      <a href="{{url('/course')}}?course=32"><i class="ti-star"></i>
+                      </a><a href="{{url('/course')}}?course=32"><i class="ti-star"></i>
+                      </a><a href="{{url('/course')}}?course=32"><i class="ti-star"></i>
+                      </a><a href="{{url('/course')}}?course=32"><i class="ti-star"></i>
+                      </a><a href="{{url('/course')}}?course=32"><i class="ti-star"></i>
                       </a>
                       <span class="enrolled">(330)</span>
                     </div>
                     <div class="course-meta text-right">
                       <!-- <strong class="course-price">$29.00</strong> -->
-                      <a href="{{ url("/login") }}" class="btn btn-filled">Enroll now</a>
+                      <a href="{{url('/course')}}?course=32" class="btn btn-filled">Enroll now</a>
                     </div>
                   </div>
                 </div>
@@ -296,26 +299,26 @@
                 <div class="single-course">
                   <figure class="course-thumb">
                     <img src="{{ url('/') }}/assets/images/java.jpg" alt="">
-                    <strong class="ribbon">$109.00</strong>
+                    <strong class="ribbon">$1090.00</strong>
                   </figure>
                   <div class="course-content">
-                    <h3><a href="{{url('/login')}}">App Devlopment</a></h3>
+                    <h3><a href="{{url('/course')}}?course=50">App Devlopment</a></h3>
                     <p>This is the recommended course to start learning Android! Build a series of apps using JAVA...
                     </p>
                     <div class="enroll">
                       <div class="ratings">
                         <span class="total-students"><i class="ti-user"></i> 305 Students</span>
-                        <a href="#"><i class="ti-star"></i>
-                        </a><a href="#"><i class="ti-star"></i>
-                        </a><a href="#"><i class="ti-star"></i>
-                        </a><a href="#"><i class="ti-star"></i>
-                        </a><a href="#"><i class="ti-star"></i>
+                        <a href="{{url('/course')}}?course=50"><i class="ti-star"></i>
+                        </a><a href="{{url('/course')}}?course=50"><i class="ti-star"></i>
+                        </a><a href="{{url('/course')}}?course=50"><i class="ti-star"></i>
+                        </a><a href="{{url('/course')}}?course=50"><i class="ti-star"></i>
+                        </a><a href="{{url('/course')}}?course=50"><i class="ti-star"></i>
                         </a>
                         <span class="enrolled">(330)</span>
                       </div>
                       <div class="course-meta text-right">
                         <!-- <strong class="course-price">$29.00</strong> -->
-                        <a href="{{ url("/login") }}" class="btn btn-filled">Enroll now</a>
+                        <a href="{{url('/course')}}?course=50" class="btn btn-filled">Enroll now</a>
                       </div>
                     </div>
                   </div>
@@ -369,12 +372,12 @@
               <img src="{{ url('/') }}/assets/images/news.jpg" alt="">
               <div class="post-content">
                 <div class="meta-tags">
-                  <a href="#" class="post-meta category">creative
-                  </a> | <a href="#" class="post-meta date">07 July, 2019</a>
+                  <a href="{{ url('/category') }}?id=24" class="post-meta category">creative
+                  </a> | <span class="post-meta date">07 July, 2019</span>
                 </div>
-                <h3 class="post-title"><a href="#">Ambani’s JioCinema secures NBCUniversal titles, escalates Netflix and Disney rivalry</a></h3>
+                <h3 class="post-title"><a href="{{ url('/post') }}?post=11">Ambani’s JioCinema secures NBCUniversal titles, escalates Netflix and Disney rivalry</a></h3>
                 <div class="meta-tags">
-                  <a href="#" class="post-meta category"><i class="ti-package"></i>Tech</a><a href="#" class="post-meta commentCount"><i class="ti-comments"></i>2 Comments</a>
+                  <a href="{{ url('/sub') }}?sub=17" class="post-meta category"><i class="ti-package"></i>Tech</a><a href="{{ url('/post') }}?post=11" class="post-meta commentCount"><i class="ti-comments"></i>2 Comments</a>
                 </div>
               </div>
             </div>
@@ -384,12 +387,12 @@
               <img src="{{ url('/') }}/assets/images/news1.jpg" alt="">
               <div class="post-content">
                 <div class="meta-tags">
-                  <a href="#" class="post-meta category">Sports
-                  </a> | <a href="#" class="post-meta date">07 June, 2019</a>
+                  <a href="{{ url('/category') }}?id=10" class="post-meta category">Sports
+                  </a> | <span class="post-meta date">07 June, 2019</span>
                 </div>
-                <h3 class="post-title"><a href="#">Reliance’s JioCinema breaks world record with free cricket streaming</a></h3>
+                <h3 class="post-title"><a href="{{ url('/post') }}?post=21">Reliance’s JioCinema breaks world record with free cricket streaming</a></h3>
                 <div class="meta-tags">
-                  <a href="#" class="post-meta category"><i class="ti-package"></i>Cricket</a><a href="#" class="post-meta commentCount"><i class="ti-comments"></i>23 Comments</a>
+                  <a href="{{ url('/sub') }}?sub=13" class="post-meta category"><i class="ti-package"></i>Cricket</a><a href="{{ url('/post') }}?post=21" class="post-meta commentCount"><i class="ti-comments"></i>23 Comments</a>
                 </div>
               </div>
             </div>
@@ -399,14 +402,14 @@
               <img src="{{ url('/') }}/assets/images/news2.jpg" alt="">
               <div class="post-content">
                 <div class="meta-tags">
-                  <a href="#" class="post-meta category">creative
-                  </a> | <a href="#" class="post-meta date">13 Feb, 2019</a>
+                  <a href="{{ url('/category') }}?id=15" class="post-meta category">creative
+                  </a> | <span class="post-meta date">13 Feb, 2019</span>
                 </div>
-                <h3 class="post-title"><a href="#">Solana’s co-founder sees potential for its blockchain to be the ‘Apple of crypto’
+                <h3 class="post-title"><a href="{{ url('/post') }}?post=18">Solana’s co-founder sees potential for its blockchain to be the ‘Apple of crypto’
                 </a></h3>
                 <div class="meta-tags">
-                  <a href="#" class="post-meta category"><i class="ti-package"></i>Tech</a>
-                  <a href="#" class="post-meta commentCount"><i class="ti-comments"></i>50 Comments</a>
+                  <a href="{{ url('/sub') }}?sub=11" class="post-meta category"><i class="ti-package"></i>Tech</a>
+                  <a href="{{ url('/post') }}?post=18" class="post-meta commentCount"><i class="ti-comments"></i>50 Comments</a>
                 </div>
               </div>
             </div>

@@ -23,7 +23,7 @@
     <div id="preloader">
       <div id="status"></div>
     </div>
-    
+
     <!-- Header strat -->
     <header class="header">
       <div class="container">
@@ -39,6 +39,9 @@
             <li class="current-menu-item">
               <a href="{{ url('/') }}">Home</a>
             </li>
+            <li><a href="{{ url('/login') }}">Courses</a></li>
+            <li><a href="{{ url('/login') }}">Search</a></li>
+            <li><a href="{{ url('/login') }}">About</a></li>
             <li><a href="{{ url('/login') }}">Log in</a></li>
           </ul>
         </nav>
@@ -56,7 +59,6 @@
           <div class="col-md-6">
             <div class="content-box">
               <h2>Login Account</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sedo<br> eiusmod tempor incididunt dolore.</p>
             </div>
             <form action="#" class="sl-form" name="login">
               <div class="form-group">
@@ -73,9 +75,9 @@
               </div>
               <button type="submit" class="btn btn-filled btn-round"><span class="bh"></span> <span>Login</span></button>
             </form>
-          </div>          
+          </div>
         </div>
-      </div>      
+      </div>
     </section>
   <!-- Login / Registration end -->
 
